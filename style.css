@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: fontes;
+    src: url(fontes/vogue/Vogue.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-image: url(https://media.istockphoto.com/id/1194831196/photo/silver-glitter-background-sparkling-shimmer-glow-particles-texture-silver-light-sparks-and.jpg?s=612x612&w=0&k=20&c=nUrsP0fDKfblikxpeppvcTq63ekYGF3tX3X8ADMi4ws=);
+}
+
+h1, h2 {
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase;
+    font-family: fontes;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background: rgb(229, 229, 230);
+
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 25px;
+    animation: coffeeshop 5s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0 cover 40%;
+}
+
+.container a{
+    text-decoration: none;
+    color: #870909;
+}
+
+section.modulo p {
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 1.3em;
+    text-indent: 2%;
+}
+
+section.modulo h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    letter-spacing: .5em;
+    text-align: center;
+}
+
+section.modulo.content {
+    padding: 40px 0;
+    background-color: rgb(255, 255, 255);
+    background-image: url(https://media.istockphoto.com/id/1194831196/photo/silver-glitter-background-sparkling-shimmer-glow-particles-texture-silver-light-sparks-and.jpg?s=612x612&w=0&k=20&c=nUrsP0fDKfblikxpeppvcTq63ekYGF3tX3X8ADMi4ws=);
+    
+}
+
+section.modulo.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    overflow: hidden;
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.modulo.parallax h1 {
+    color: #f5f2f2;
+    text-shadow: 7px 7px 7px darkred;
+    text-align: center;
+    font-size: 40px;
+    z-index: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section.modulo.parallax::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(37, 36, 36, 0) 0, rgba(0, 0, 0, 0) 30%, #000 100%);
+}
+
+
+
+
+
+section.modulo.parallax-1 {
+    background-image: url("https://musically.com/wp-content/uploads/2022/07/Beyonce-Renaissance-Album-Cover-.jpg");
+}
+
+section.modulo.parallax-2 {
+    background-image: url("https://www.billboard.com/wp-content/uploads/2022/08/06-beyonce-cr-Mason-Poole-billboard-1548.jpg");
+}
+
+section.modulo.parallax-3 {
+    background-image: url("https://portalpopline.com.br/wp-content/uploads/2022/07/Renaissance_25-1-1536x1015.jpg");
+}
+
+.galeria{
+    margin: 2em;
+    height: 20em;
+    gap: 0.5em;
+    display: flex;
+    } 
+
+   
+    .galeria div{
+        flex: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        border-radius: 10%;
+        transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    
+    }
+    .galeria div:hover{
+    flex: 3;
+    
+    }
+    
+    .galeria:hover div:not(:hover){
+        filter: grayscale(100%) blur(2px) ;
+        
+    }
+
+    footer{
+        text-align: center;
+        color: black;
+        font-size: 30px;
+    }
+
+@keyframes renaissance {
+    from {
+        translate: -100vw 0;
+        color: rgb(231, 224, 218);
+        opacity: 1;
+    }
+
+    to {
+        translate: 0 0;
+    }
+}
+
+
+@media all and (max-width: 860px) {
+    section.modulo.parallax h1 {
+        color: rgb(151, 140, 140)292;
+        text-shadow: 5px 5px 7px rgb(19, 17, 17);
+        text-align: center;
+        font-size: 2.5em;
+        z-index: 100;
+    }
+
+    section.modulo p {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    section.modulo.content {
+        width: 90%;
+        /* background: #9c1111; */
+    }
+
+    section.modulo.h2 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+}
