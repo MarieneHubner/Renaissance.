@@ -85,7 +85,7 @@ section.modulo.parallax {
 
 section.modulo.parallax h1 {
     color: #f5f2f2;
-    text-shadow: 7px 7px 7px darkred;
+/*     text-shadow: 7px 7px 7px darkred; */
     text-align: center;
     font-size: 40px;
     z-index: 100;
